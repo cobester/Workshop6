@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var database = require('./database');
 var readDocument = database.readDocument;
 //var writeDocument = database.writeDocument;
-//var func = require("util");
+
 // Creates an Express server.
 var app = express();
 app.use(bodyParser.text());
@@ -85,6 +85,6 @@ app.get('/user/:userid/feed', function(req, res) {
   }
 });
 // Starts the server on port 3000!
-app.listen(3000, function () {
+app.listen(3000, function() {
   console.log('Example app listening on port 3000!');
 });
