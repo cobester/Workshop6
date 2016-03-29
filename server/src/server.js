@@ -30,7 +30,6 @@ function getFeedItemSync(feedItemId) {
   });
   return feedItem;
 }
-
 /**
  * Get the feed data for a particular user.
  */
